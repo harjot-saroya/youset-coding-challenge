@@ -8,8 +8,7 @@ export const Packages = (props) => {
     let handleSelection = (props) => {
 
         const { packageName } = props;
-        console.log('TEST', packageName)
-        navigate('/form/:test');
+        navigate('/form/' + packageName);
 
     }
     const obj = Object.keys(data).map((element) => { return <Row><Cell>{data[element].name}</Cell><DescriptionCell>{data[element].description}</DescriptionCell><Cell>{data[element].price}</Cell><Cell><SelectButton onClick={() => { handleSelection({ packageName: element }) }}> Select</SelectButton></Cell></Row > })
