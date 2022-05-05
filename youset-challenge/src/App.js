@@ -15,8 +15,4 @@ function App() {
   );
 }
 
-const test = () => {
-  return (<h1>test123</h1>)
-}
-
 export default App;
