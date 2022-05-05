@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const FormQuestion = styled.div`
 margin-bottom: 1em;
+display: flex;
+flex-direction: column;
 `
 
 export const QuestionBody = styled.form`
